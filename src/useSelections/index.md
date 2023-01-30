@@ -14,7 +14,7 @@ This hook is used for checkbox group, supports multiple selection, single select
 ```tsx
 import React from 'react';
 import { Checkbox, Space, Button, Divider } from 'antd';
-import { useSelections, useForceUpdate } from '@shihengtech/hooks';
+import { useSelections, useForceUpdate } from '@tastien/thooks';
 
 const CheckboxGroup = Checkbox.Group;
 

@@ -14,7 +14,7 @@ nav:
 ```tsx
 import React, { useState, useEffect } from 'react';
 import { Button } from 'antd';
-import { useUpdateEffect } from '@shihengtech/hooks';
+import { useUpdateEffect } from '@tastien/thooks';
 
 export default (() => {
   const [renderCount, setRenderCount] = useState(1);

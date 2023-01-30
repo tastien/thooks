@@ -12,7 +12,7 @@ nav:
 ```tsx
 import React from 'react';
 import { Button } from 'antd';
-import { useLocalStorageState } from '@shihengtech/hooks';
+import { useLocalStorageState } from '@tastien/thooks';
 
 export default (() => {
   const [localStorage, setLocalStorage] = useLocalStorageState('key', 1);
@@ -39,8 +39,7 @@ const [state, setState] = useLocalStorageState<T>(key: string, defaultValue?: T 
 
 ### Params
 
-|  参数 | 说明 | 类型 | 默认值 |
-|  ----  | ----  |----  |----  |
-| key | 必填，`localStorage` 存储的键值对的键值 |string |- |
-| defaultValue | 默认值，会优先以 `localStorage` 中保存的值为准 |any |()=>any |
-
+| 参数         | 说明                                           | 类型   | 默认值  |
+| ------------ | ---------------------------------------------- | ------ | ------- |
+| key          | 必填，`localStorage` 存储的键值对的键值        | string | -       |
+| defaultValue | 默认值，会优先以 `localStorage` 中保存的值为准 | any    | ()=>any |

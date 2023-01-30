@@ -11,7 +11,7 @@ nav:
 
 ```tsx
 import React from 'react';
-import { useControlledValue } from '@shihengtech/hooks';
+import { useControlledValue } from '@tastien/thooks';
 
 type Props = {
   value?: string;

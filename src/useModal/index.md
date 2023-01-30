@@ -12,7 +12,7 @@ nav:
 ```tsx
 import React from 'react';
 import { Button, Modal } from 'antd';
-import { useModal } from '@shihengtech/hooks';
+import { useModal } from '@tastien/thooks';
 
 export default (() => {
   const { visible, initValue, openModal, closeModal } = useModal<number>();

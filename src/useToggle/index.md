@@ -12,7 +12,7 @@ nav:
 ```tsx
 import React from 'react';
 import { Button } from 'antd';
-import { useToggle } from '@shihengtech/hooks';
+import { useToggle } from '@tastien/thooks';
 
 export default (() => {
   const [value, toggle] = useToggle(true);

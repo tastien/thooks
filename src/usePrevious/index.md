@@ -12,7 +12,7 @@ nav:
 ```tsx
 import React, { useRef } from 'react';
 import { Button } from 'antd';
-import { usePrevious, useForceUpdate } from '@shihengtech/hooks';
+import { usePrevious, useForceUpdate } from '@tastien/thooks';
 
 export default (() => {
   const initValue = useRef<number[]>([]);

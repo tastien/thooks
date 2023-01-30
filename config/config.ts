@@ -2,10 +2,11 @@ import { defineConfig } from 'dumi';
 import menus from './hooks';
 
 export default defineConfig({
-  title: 'hooks',
+  title: 'thooks',
   publicPath: '/hooks/',
-  favicon: 'https://bi.shihengtech.com/favicon.png',
-  logo: 'https://bi.shihengtech.com/favicon.png',
+  favicon:
+    'https://shiheng-tech.oss-cn-shanghai.aliyuncs.com/intelligence-shop/test/shop/tstlogot2x.png',
+  logo: 'https://shiheng-tech.oss-cn-shanghai.aliyuncs.com/intelligence-shop/test/shop/tstlogot2x.png',
   outputPath: 'docs-dist',
   mode: 'site',
   navs: [

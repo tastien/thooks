@@ -12,7 +12,7 @@ nav:
 ```tsx
 import React, { useReducer, useCallback, useEffect } from 'react';
 import { Button, message } from 'antd';
-import { useImmutable, useForceUpdate } from '@shihengtech/hooks';
+import { useImmutable, useForceUpdate } from '@tastien/thooks';
 
 export default (() => {
   const [value, add] = useReducer((x) => x + 1, 0);

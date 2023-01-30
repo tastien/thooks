@@ -1,10 +1,7 @@
-# Shi Heng Hooks
+# Tastien Hooks
 
 ## 📦 Install
 
 ```
-npm i @shihengtech/hooks --save
+npm i @tastien/thooks --save
 ```
-
-Some useful hooks. No Dependencies,100% coverage.
-
