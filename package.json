@@ -1,0 +1,70 @@
+{
+  "name": "@shihengtech/hooks",
+  "version": "1.0.9",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "main": "lib/index.js",
+  "module": "./es/index.js",
+  "sideEffects": false,
+  "keywords": [
+    "hooks",
+    "hook",
+    "react-hooks",
+    "shiheng"
+  ],
+  "publishConfig": {
+    "tag": "next",
+    "access": "public"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@diamondyuan/eslint-config-react-typescript": "^7.0.4",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "@umijs/test": "^3.0.5",
+    "antd": "~4.17.3",
+    "babel-plugin-import": "^1.13.3",
+    "dumi": "^1.1.40",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "father-build": "^1.21.1",
+    "gh-pages": "^3.0.0",
+    "jest": "^27.3.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "react-router": "^5.2.1",
+    "yorkie": "^2.0.0"
+  }
+}
