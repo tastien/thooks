@@ -16,7 +16,7 @@ export default defineConfig({
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/shiheng-fe/hooks',
+      path: 'https://github.com/tastien/thooks',
     },
   ],
   menus: {
