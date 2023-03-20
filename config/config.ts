@@ -4,9 +4,8 @@ import menus from './hooks';
 export default defineConfig({
   title: 'thooks',
   publicPath: '/hooks/',
-  favicon:
-    'https://shiheng-tech.oss-cn-shanghai.aliyuncs.com/intelligence-shop/test/shop/tstlogot2x.png',
-  logo: 'https://shiheng-tech.oss-cn-shanghai.aliyuncs.com/intelligence-shop/test/shop/tstlogot2x.png',
+  favicon: 'https://f.cdn-static.cn/29440_16560326238012.png',
+  logo: 'https://f.cdn-static.cn/29440_16560326238012.png',
   outputPath: 'docs-dist',
   mode: 'site',
   navs: [
