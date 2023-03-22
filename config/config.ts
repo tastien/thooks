@@ -1,9 +1,10 @@
 import { defineConfig } from 'dumi';
-import menus from './hooks';
+// import menus from './hooks';
 
 export default defineConfig({
   title: 'thooks',
-  publicPath: '/hooks/',
+  base: '/thooks',
+  publicPath: '/thooks/',
   favicon: 'https://f.cdn-static.cn/29440_16560326238012.png',
   logo: 'https://f.cdn-static.cn/29440_16560326238012.png',
   outputPath: 'docs-dist',
@@ -18,15 +19,15 @@ export default defineConfig({
       path: 'https://github.com/tastien/thooks',
     },
   ],
-  menus: {
-    '/': [
-      {
-        title: 'Home',
-        path: 'index',
-      },
-    ],
-    '/hooks': menus,
-  },
+  // menus: {
+  //   '/': [
+  //     {
+  //       title: 'Home',
+  //       path: menus
+  //     },
+  //   ],
+  //   // 'thooks/hooks': menus,
+  // },
 
   extraBabelPlugins: [
     [
